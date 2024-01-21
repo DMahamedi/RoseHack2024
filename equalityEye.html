@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Misogyny Filter Extension</title>
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            background-color: #f2f2f2;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        } */
+
+        html, body {
+            width: 100%;
+            height: 90%;
+            margin: 0;
+            padding: 0;
+            color: transparent;
+            background-color: transparent;
+        }
+
+        .popup-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #0e2c13;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px; /* Smaller width */
+            height: 22px; /* Smaller height */
+            margin-right: 8px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px; /* Smaller knob */
+            width: 18px; /* Smaller knob */
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: 0.4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(8px); /* Adjust for smaller switch */
+        }
+
+        .slider.round {
+            border-radius: 22px; /* Adjust for smaller switch */
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .label-text {
+            font-size: 10 px; /* Smaller font size */
+            user-select: none;
+            color: rgb(194, 176, 176);
+            
+        }
+    </style>
+</head>
+<body>
+  <div class="popup-container">
+    <span class="label-text">Misogyny Filter</span>
+    <label class="switch">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider round"></span>
+    </label>
+    
+    <script>
+        // JavaScript for toggle switch event
+        document.getElementById('toggle-switch').addEventListener('change', function() {
+            if (this.checked) {
+                // Activate Misogyny Filter
+            } else {
+                // Deactivate Misogyny Filter
+            }
+        });
+    </script>
+  </div>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Misogyny Filter Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-right: 10px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .label-text {
+            font-size: 16px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider round"></span>
+    </label>
+    <span class="label-text">Misogyny Filter</span>
+
+    <script>
+        // JavaScript to handle toggle switch change event
+        document.getElementById('toggle-switch').addEventListener('change', function() {
+            if (this.checked) {
+                // Code to activate the Misogyny Filter
+            } else {
+                // Code to deactivate the Misogyny Filter
+            }
+        });
+    </script>
+</body>
+</html> -->
