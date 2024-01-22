@@ -22,3 +22,8 @@ We are most proud of our achievements with the large language model, including t
 On top of that, we are also very happy with the reliability of the extension. We have seen it work across twitter.
 
 
+# Other
+Due to limits on the size of files we can upload to github, we were not able to include the .bin file containing our DistilBERT model to this repository
+
+
+
